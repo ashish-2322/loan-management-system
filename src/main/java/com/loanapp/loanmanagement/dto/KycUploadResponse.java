@@ -1,0 +1,16 @@
+package com.loanapp.loanmanagement.dto;
+
+import com.loanapp.loanmanagement.enums.KycStatus;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class KycUploadResponse {
+    private String message;
+    private KycStatus status;
+}
